@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Haonan Wang - AI Research in Healthcare & Explainable AI"
 author_profile: true
 redirect_from: 
   - /about/
