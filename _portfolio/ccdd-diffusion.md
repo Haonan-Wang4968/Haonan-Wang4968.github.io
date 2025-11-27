@@ -2,7 +2,7 @@
 title: "CCDD: Concept-Consistent Diffusion Denoising"
 excerpt: "<b>Ongoing Research.</b><br/>Exploring interpretability and control in generative diffusion models.<br/><img src='/images/ccdd_banner.png'>"
 collection: portfolio
-date: 2025-11- Now
+date: 2025-11-01
 order: 1
 ---
 

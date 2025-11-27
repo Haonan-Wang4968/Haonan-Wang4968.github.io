@@ -2,7 +2,7 @@
 title: "Robust Voiceprint Recognition System for Power Grid Security"
 excerpt: "<b>National Challenge Cup Special Prize Project.</b><br/>A robust speaker verification system designed for high-noise environments.<br/><img src='/images/voiceprint_banner.png'>"
 collection: portfolio
-date: 2024-10-01 --- Now
+date: 2024-10-01
 order: 2
 ---
 
