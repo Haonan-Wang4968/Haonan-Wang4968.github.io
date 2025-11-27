@@ -2,7 +2,8 @@
 title: "AI-Driven Smart Healthcare Analysis"
 excerpt: "<b>Research Paper & Core Tech Implementation.</b><br/>Proposed a novel framework for medical image segmentation/diagnosis.<br/><img src='/images/medical_banner.png'>"
 collection: portfolio
-date: 2023-10-10
+start: 2023-10-10
+end: now
 order: 3
 
 ---
