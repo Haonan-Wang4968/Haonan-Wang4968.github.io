@@ -1,0 +1,113 @@
+/* Styles for the academic homepage, research list, and CV. */
+
+:root {
+  --academic-accent: #166673;
+  --academic-accent-hover: #104d57;
+}
+
+html[data-theme="dark"] {
+  --academic-accent: #a8dfe4;
+  --academic-accent-hover: #d4f3f5;
+}
+
+.academic-intro {
+  max-width: 62ch;
+}
+
+.page__content .academic-meta {
+  margin: 0 0 0.45em;
+  color: var(--academic-accent);
+  font-size: 0.8em;
+  font-weight: 650;
+}
+
+.page__content .academic-lead {
+  max-width: 52ch;
+  font-size: 1.24em;
+  line-height: 1.45;
+}
+
+.academic-actions,
+.academic-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.35em 0 1.75em;
+}
+
+.page__content .academic-action,
+.page__content .academic-jump a {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: var(--academic-accent);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.page__content .academic-action--primary {
+  border-color: var(--academic-accent);
+  background: var(--academic-accent);
+  color: var(--global-bg-color);
+}
+
+.page__content .academic-action:hover,
+.page__content .academic-jump a:hover {
+  color: var(--academic-accent-hover);
+  text-decoration: underline;
+}
+
+.page__content .academic-action--primary:hover {
+  background: var(--academic-accent-hover);
+  color: var(--global-bg-color);
+}
+
+.page__content .academic-action:focus-visible,
+.page__content .academic-jump a:focus-visible,
+.page__content .research-item a:focus-visible {
+  outline: 2px solid var(--academic-accent);
+  outline-offset: 3px;
+}
+
+.page__content .academic-jump {
+  font-size: 0.86em;
+}
+
+.research-list {
+  max-width: 72ch;
+}
+
+.research-item {
+  padding: 1.15em 0;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.page__content .research-item h2 {
+  margin: 0 0 0.35em;
+  padding: 0;
+  border: 0;
+  font-size: 1.18em;
+}
+
+.page__content .research-item h2 a {
+  color: var(--academic-accent);
+}
+
+.page__content .research-item h2 a:hover {
+  color: var(--academic-accent-hover);
+}
+
+.page__content .research-item p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 599px) {
+  .page__content .academic-lead {
+    font-size: 1.12em;
+  }
+
+  .research-item {
+    padding: 0.9em 0;
+  }
+}

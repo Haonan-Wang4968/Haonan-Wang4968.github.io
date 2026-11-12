@@ -1,24 +1,25 @@
 ---
-title: "Robust Voiceprint Recognition System for Power Grid Security"
-excerpt: "<b>National Challenge Cup Special Prize Project.</b><br/>A robust speaker verification system designed for high-noise environments.<br/><img src='/images/voiceprint_banner.png'>"
-collection: portfolio
-start: 2024-10-01
-end: now
-order: 2
+title: "Acoustic Fault Detection for Power Transformers"
+featured: true
+sitemap: true
+order: 3
+affiliation: "State Grid Open Fund Project"
+period: "Dec 2024 – Present"
+summary: "Developed unsupervised anomaly detection for transformer sounds and implemented real-time audio transport."
+description: "Unsupervised acoustic fault detection and real-time audio transport for power transformer monitoring."
 ---
 
-## Overview
-This project focuses on the security verification of power grid dispatching communication. We developed a robust voiceprint recognition system capable of accurately identifying speakers even in extremely noisy industrial environments.
+<p class="academic-meta">{{ page.affiliation }} · {{ page.period }}</p>
 
-## Key Contributions
-*   **Algorithm Optimization:** Implemented and optimized [Mention models, e.g., ECAPA-TDNN / ResNet] to handle channel mismatch and background noise.
-*   **System Integration:** Deployed the model onto edge devices/servers, achieving real-time verification with low latency.
-*   **Competition Results:** Won the **Special Prize (特等奖)** in the "Challenge Cup" National College Student Extracurricular Academic Science and Technology Works Competition.
+## Research question
 
-## Technologies
-*   **Frameworks:** PyTorch, Kaldi/WeSpeaker
-*   **Methods:** Contrastive Learning, Noise Augmentation, Feature Fusion
+Can transformer faults be detected from equipment sounds when labeled fault recordings are scarce?
 
-<!-- ## Gallery
-![System Architecture](/images/voiceprint_arch.png)
-*Figure 1: The architecture of the voiceprint recognition system.* -->
+## My contributions
+
+- Proposed a pipeline that extracts mel-frequency cepstral coefficients (MFCCs) and uses a variational autoencoder (VAE) to detect anomalies.
+- Implemented real-time audio transmission and reception over RTP, optimized distributed VAE training with MindSpore, and led the second phase of a ResNet fault classifier.
+
+## Reported project results
+
+The project reported 98% anomaly detection accuracy and 95.6% accuracy for the separate fault classification task.

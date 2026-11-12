@@ -1,76 +1,76 @@
 ---
-layout: archive
+layout: single
 title: "CV"
+description: "Research experience, education, awards, and technical skills of Haonan Wang."
 permalink: /cv/
 author_profile: true
+sitemap: true
 redirect_from:
   - /resume
+  - /cv-json/
+  - /resume-json
 ---
 
-{% include base_path %}
+<nav class="academic-jump" aria-label="CV sections">
+  <a href="#research-experience">Research</a>
+  <a href="#education">Education</a>
+  <a href="#awards">Awards</a>
+  <a href="#technical-skills">Skills</a>
+  <a href="#leadership">Leadership</a>
+</nav>
 
-Education
-======
-* **Huazhong University of Science and Technology**  
-  B.S. in Electronics and Information Engineering  
-  *2022 – Present*
-  
-Experience
-======
-* **DIAN TEAM - SMART HEALTHCARE GROUP**  
-  *Spring 2024 – Present*  
-  - Collaborated with HUST Tongji Hospital to develop AI-driven medical applications
-  - Led research on LLM-based clinical trial recommendation and multimodal data analysis
-  - Designed system backend (Go + Vue) and integrated large models
-  - Coordinated a 5-member team in algorithm development
+## Research experience
 
-* **STATE GRID OPEN FUND PROJECT**  
-  *Spring 2024 – Present*  
-  - Proposed unsupervised anomaly detection using MFCC features and VAE models
-  - Achieved 98% detection accuracy and 27% faster training
-  - Awarded National Second Prize in Huawei ICT Innovation Competition (2024)
+### Hong Kong Baptist University · Research Assistant
 
-* **REMOTE RESEARCH ASSISTANT, MBZUAI**  
-  *Oct 2024 – Present*  
-  - Proposed CCDD framework integrating Concept Bottleneck Modules into diffusion-based denoisers
+August 2026 – Present
 
-  
-Skills
-======
-* Programming: Go, Python, MATLAB, C/C++, Verilog
-* Frameworks: PyTorch, MindSpore, NumPy, Pandas
-* Tools: Git, Vim, LaTeX, Markdown, Docker
-* Languages: Fluent English (CET-6: 517), Advanced Mathematics
+[Memory Systems for Mixture-of-Experts Inference]({{ '/portfolio/moe-memory-systems/' | relative_url }}) — Investigate expert scheduling and processing-in-memory mappings to reduce inference tail latency.
 
-Awards & Competitions
-======
-* **National Grand Prize**, "Challenge Cup" National College Student Extracurricular Academic Science and Technology Works Competition  
-  *November 2025*
-* **National Second Prize**, Huawei ICT Innovation Competition  
-  *April 2025*
-* **National Second Prize**, Chinese Collegiate Computing Competition  
-  *August 2025*
-* **National Third Prize**, National Microcomputer Based Embedded System Design Competition  
-  *August 2025*
-* **Science and Technology Innovation Scholarship**  
-  *October 2025*
-* **Excellent Student Cadre**  
-  *October 2025*
-* **Huazhong University of Science and Technology Freshman Academic Excellence Scholarship**  
-  *2023*
+### MBZUAI · Remote Research Assistant
 
-<!-- Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
+October 2025 – March 2026
+
+[Concept-Consistent Diffusion Denoising]({{ '/portfolio/ccdd-diffusion/' | relative_url }}) — Proposed a concept bottleneck inside a diffusion denoiser to diagnose semantic drift and study certified robustness under randomized smoothing.
+
+### State Grid Open Fund Project
+
+December 2024 – Present
+
+[Acoustic Fault Detection for Power Transformers]({{ '/portfolio/voiceprint-recognition/' | relative_url }}) — Developed unsupervised fault detection with MFCC features and a variational autoencoder. Implemented real-time audio transport and worked on distributed model training and fault classification.
+
+### College-Level Innovation Training Project
+
+November 2024 – Present
+
+[OvarianGPT]({{ '/portfolio/ovariangpt/' | relative_url }}) — Built an asynchronous OCR pipeline and used large language models to extract structured fields from follow-up reports.
+
+### DIAN Team · Smart Healthcare Group
+
+[AI Infrastructure for Clinical Applications]({{ '/portfolio/smart-healthcare/' | relative_url }}) — Built a Go backend and a shared interface for multiple language models in collaboration with HUST Tongji Hospital.
+
+## Education
+
+**Huazhong University of Science and Technology (HUST)**
+
+Undergraduate Program for Advanced Project-Based Information Science Education (2+2), 2022–2026
+
+## Awards
+
+- **National Grand Prize**, Challenge Cup National College Student Extracurricular Academic Science and Technology Works Competition (November 2025)
+- **Science and Technology Innovation Scholarship** and **Excellent Student Cadre** (October 2025)
+- **National Second Prize**, Chinese Collegiate Computing Competition (August 2025)
+- **National Third Prize**, National Microcomputer Based Embedded System Design Competition for College Students (August 2025)
+- **National Second Prize**, Huawei ICT Innovation Competition (April 2025)
+- **HUST Freshman Academic Excellence Scholarship** (2023)
+
+## Technical skills
+
+- **Languages:** Go, Python, MATLAB, C/C++, Verilog
+- **Frameworks and libraries:** PyTorch, MindSpore, NumPy, pandas
+- **Tools:** Docker, Git, Linux, LaTeX
+
+## Leadership
+
+- **Class Monitor, HUST Honors Program** — Organized class events and helped edit the yearbook.
+- **Core Member, DIAN Team Leadership** — Coordinated team meetings and annual publications.

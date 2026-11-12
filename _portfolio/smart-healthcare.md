@@ -1,24 +1,24 @@
 ---
-title: "AI-Driven Smart Healthcare Analysis"
-excerpt: "<b>Research Paper & Core Tech Implementation.</b><br/>Proposed a novel framework for medical image segmentation/diagnosis.<br/><img src='/images/medical_banner.png'>"
-collection: portfolio
-start: 2023-10-10
-end: now
-order: 3
-
+title: "AI Infrastructure for Clinical Applications"
+featured: true
+sitemap: true
+order: 4
+affiliation: "DIAN Team · HUST Tongji Hospital"
+summary: "Built a Go backend and shared language-model API for medical applications developed with HUST Tongji Hospital."
+description: "Backend systems and language-model integration for a DIAN Team collaboration with HUST Tongji Hospital."
 ---
 
-## Overview
-This project aims to assist doctors in diagnosis by utilizing deep learning for [Specific Medical Task, e.g., Tumor Segmentation / Disease Classification]. It addresses the challenge of [Specific Problem, e.g., data scarcity / small lesion detection].
+<p class="academic-meta">{{ page.affiliation }}</p>
 
-## Method & Innovation
-*   **Novel Framework:** Proposed a [Name of your method] network that integrates [Technique A] and [Technique B].
-*   **Performance:** Achieved State-of-the-Art (SOTA) performance on the [Dataset Name] dataset, surpassing baseline models by [X]%.
-*   **Skill Growth:** Deepened understanding of Computer Vision fundamentals, specifically in [Attention Mechanisms / Transformer / CNNs].
+## Project question
 
-## Publication
-*   **Paper Title:** [Your Paper Title]
-*   **Status:** Published in / Submitted to [Conference/Journal Name]
+How can clinical applications share backend services for OCR and large language models while handling concurrent requests?
 
-<!-- ![Method Diagram](/images/medical_method.png)
-*Figure 1: Overview of the proposed network pipeline.* -->
+## My contributions
+
+- Designed a Go backend with Redis caching and goroutine pools, and helped run containerized services behind Nginx.
+- Built a shared API for multiple language models, with dynamic routing and response caching.
+
+## Reported project result
+
+The shared API reduced redundant model calls by 40% in the project.

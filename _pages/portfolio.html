@@ -1,14 +1,23 @@
 ---
-layout: archive
-title: "Portfolio"
+layout: single
+title: "Research"
+description: "Selected research in memory systems, robust machine learning, and applied AI by Haonan Wang."
 permalink: /portfolio/
 author_profile: true
+sitemap: true
 ---
 
-{% include base_path %}
+<p class="academic-lead">Current research in memory systems, alongside earlier work in robust machine learning and applied AI.</p>
 
-{% assign sorted_portfolio = site.portfolio | sort: "order" %}
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+{% assign projects = site.portfolio | where: "featured", true | sort: "order" %}
+<div class="research-list">
+  {% for project in projects %}
+    <article class="research-item">
+      <p class="academic-meta">
+        {{ project.affiliation | escape }}{% if project.period %} · {{ project.period | escape }}{% endif %}
+      </p>
+      <h2><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h2>
+      <p>{{ project.summary | escape }}</p>
+    </article>
+  {% endfor %}
+</div>

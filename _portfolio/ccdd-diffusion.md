@@ -1,23 +1,22 @@
 ---
-title: "CCDD: Concept-Consistent Diffusion Denoising"
-excerpt: "<b>Ongoing Research.</b><br/>Exploring interpretability and control in generative diffusion models.<br/><img src='/images/ccdd_banner.png'>"
-collection: portfolio
-start: 2025-11-01
-end: now
-order: 1
+title: "Concept-Consistent Diffusion Denoising"
+featured: true
+sitemap: true
+order: 2
+affiliation: "MBZUAI"
+period: "Oct 2025 – Mar 2026"
+summary: "Studied semantic drift in diffusion denoising and proposed using a concept bottleneck to monitor it."
+description: "Research on semantic consistency and certified robustness in diffusion denoising."
 ---
 
-## Project Description
-Concept-Consistent Diffusion Denoising (CCDD) is an ongoing research initiative focusing on the interpretability and controllability of Diffusion Models. We are investigating how to maintain semantic consistency during the denoising process.
+<p class="academic-meta">{{ page.affiliation }} · {{ page.period }}</p>
 
-## Current Progress
-*   **Data Pipeline:** Built a pipeline using **SAM2** for segmentation and **CLIP** for embedding to generate fine-grained concept clusters from the CIFAR-10/CUB datasets.
-*   **Methodology:** utilizing K-Means clustering to extract semantic concepts and injecting them into the diffusion reverse process to guide generation.
-*   **Initial Results:** Preliminary experiments show promising results in controlling the generation of specific attributes while maintaining high image fidelity.
+## Research question
 
-## Future Work
-*   Optimizing the `pos_weight` mechanism to handle class imbalance in concept datasets.
-*   Extending the framework to large-scale datasets like ImageNet.
+Can monitoring interpretable concepts help a diffusion denoiser preserve the semantics of its input while supporting certified robustness under randomized smoothing?
 
-<!-- ![Initial Results](/images/ccdd_results.png)
-*Figure 1: Preliminary generation results controlled by specific concepts.* -->
+## My contributions
+
+- Proposed Concept-Consistent Diffusion Denoising (CCDD), which integrates a concept bottleneck module into a diffusion denoiser.
+- Investigated how changes in concept activations can reveal semantic drift during denoising.
+- Developed a formulation linking concept consistency to the tightness of empirical robustness certificates.
